@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+/*แถบเมนู*/
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: inline;
+}
+nav{
+    padding: 0.2rem;
+    background-color: #fff;
+}
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 80px; 
+}
+.logo a {
+    font-size: 2rem; 
+    font-weight: bold;
+    color: #FFAA0D;
+    text-decoration: none;
+    line-height: 1;         
+    display: flex;
+    align-items: center;    
+    height: 100%;  
+}
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menu li {
+    margin: 0 1rem;
+}
+.menu li a{
+   color: black;
+    text-decoration: none;
+    font-size: 18px;        
+    display: inline-block;
+    padding: 0.5rem 1rem; 
+    transition: 0s ease;
+}
+.menu li a:hover{
+   background-color: #FFAA0D;
+   border-radius: 20px;
+}
+/*แถบสีส้ม*/
+.maincontent{
+    background-color: #FFAA0D;
+}
+.maincontent-con{
+    display: flex;
+}
+.maincontent-info{
+    width: 100%;
+    padding: 2rem;
+}
+.maincontent-info h3 {
+    font-size: 40px;
+}
+.maincontent-info p {
+    margin: 1rem 0;
+    font-size: 38px;
+}
+.maincontent-info .maincontent-btn{
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.maincontent-info .maincontent-btn:hover{
+    background-color: rgb(246, 132, 17);
+}
+.maincontent-img{
+    width: 100%;
+    padding: 2rem;
+}
+.maincontent-img img,
+.content-item img {
+    border-radius: 60px;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+/*ช่องค้นหา*/
+.search-bar {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 400px;
+  align-items: center;
+  background-color: #e8e8e8;
+  border-radius: 2rem;
+  padding: 0.8rem 1.2rem;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.search-bar:hover{
+    background-color: #c8c8c8;
+}
+.search-bar i {
+  color: black;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+.search-input{
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  font-size: 1.1rem;
+}
+.search-input::placeholder {
+  color: #555;
+  opacity: 1;
+}
+/*ช่องแสดงรายการอาหารในหน้าเมนู*/ 
+.content{
+    background-color: #fff;
+    padding: 2rem;
+}
+.content-con{
+    max-width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.content-title{
+    margin: 2rem 0;
+    display: block;
+    
+}
+.content-item img{
+    width: 50%;
+}
+.content-item h4{
+    margin-top: 1rem;
+}
+.content-item p {
+    margin: 0.5rem;
+}
+.content-item a{
+    display: inline-block;
+    color: black;
+    background-color: #FFAA0D;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+.content-item a:hover{
+    background-color: #f6ae11;
+}
+.content-item .content-btn{
+    display: inline-block;
+    color: black;
+    background-color: #FFAA0D;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+.content-item .content-btn:hover{
+    background-color: #f68211;
+}
+/*ช่องแสดงรายการอาหารในหน้าเมนู*/
+.card-menu {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.card {
+    background-color: #dfdfdf;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    background-color: #b7b7b7;
+}
+/* กล่องlogin */
+.container1{
+    background:#fff;
+    width:450px;
+    padding:1.5rem;
+    margin:50px auto;
+    border-radius:10px;
+    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+}
+form{
+    margin:0 2rem;
+}
+.form-title{
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    padding:1.3rem;
+    margin-bottom:0.4rem;
+}
+input{
+    color:inherit;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #757575;
+    padding-left:1.5rem;
+    font-size:15px;
+}
+.input-group{
+    padding:1% 0;
+    position:relative;
+
+}
+.input-group i{
+    position:absolute;
+    color:black;
+}
+input:focus{
+    background-color: transparent;
+    outline:transparent;
+    border-bottom:2px solid hsl(41, 98%, 48%);
+}
+input::placeholder{
+    color:transparent;
+}
+label{
+    color:#757575;
+    position:relative;
+    left:1.2em;
+    top:-1.3em;
+    cursor:auto;
+    transition:0.3s ease all;
+}
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-3em;
+    color:hsl(41, 98%, 48%);
+    font-size:15px;
+}
+.recover{
+    text-align:right;
+    font-size:1rem;
+    margin-bottom:1rem;
+}
+.recover a{
+    text-decoration:none;
+    color:#7b7b7b;
+}
+.recover a:hover{
+    text-decoration:underline;
+    color:#FFAA0D;
+}
+button{
+    font-size:1.1rem;
+    padding:8px 0;
+    border-radius:5px;
+    outline:none;
+    border:none; width:100%;
+    background:#FFAA0D;
+    color:white;
+    cursor:pointer;
+    transition:0.5s;
+}
+button:hover{
+    background:#07001f;
+}
+.or{
+    font-size:1.1rem;
+    margin-top:0.5rem;
+    text-align:center;
+}
+.icons{
+    text-align:center;
+}
+.icons i{
+    color:#FFAA0D;
+    padding:0.8rem 1.5rem;
+    border-radius:10px;
+    font-size:1.5rem;
+    cursor:pointer;
+    border:2px solid #dfe9f5;
+    margin:0 15px;
+    transition:1s;
+}
+.icons i:hover{
+    background:#000000;
+    font-size:1.6rem;
+    border:2px solid rgb(0, 0, 0);
+}
+.links{
+    display:flex;
+    justify-content:space-around;
+    padding:0 4rem;
+    margin-top:0.9rem;
+    font-weight:bold;
+}
+ #signUpButton, #signInButton{
+    color:#FFAA0D;
+    border:none;
+    background-color:transparent;
+    font-size:1rem;
+    font-weight:bold;
+}
+#signUpButton:hover, #signInButton:hover {
+    text-decoration:underline;
+    color:rgb(118, 118, 118);
+} 
+.messageDiv{
+    background-color:hsl(0, 0%, 72%);
+    color:rgb(0, 0, 0);
+    padding:10px 20px;
+    margin:10px;
+    border-radius: 5px;
+    font-size:1rem;
+    opacity:0;
+    animation:fadeOut 7s forwards;
+}
+/*กล่องข้อความในหน้าโปรไฟล์*/
+.container-con {
+    padding: 25px;
+    background-color: #FFAA0D;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+.profile-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.profile-item {
+    margin: 5px 0;
+    font-size: 24px;
+}
+.btn1{
+    background-color: #FFAA0D;
+    color: #000;
+    max-width: 200px;
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.btn1:hover {
+    background-color: #d0d0d0;
+}
+#map {
+    position: relative;
+    z-index: 1;
+    height: 400px;
+    background: none !important;
+    filter: none !important;
+    box-shadow: none !important;
+}
+
+#map * {
+    background: none !important;
+    filter: none !important;
+    box-shadow: none !important;
+    mask-image: none !important;
+    backdrop-filter: none !important;
+    mix-blend-mode: normal !important;
+    opacity: 1 !important;
+}
+
+.leaflet-container {
+    background: none !important;
+    filter: none !important;
+}
+#list {
+    padding: 25px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.place {
+    background: #dbdbdb;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.distance {
+    color: #555;
+    font-size: 0.9em;
+}

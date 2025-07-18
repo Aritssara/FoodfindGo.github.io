@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนู</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!--แถบเมนู-->
+<div id="navbar"></div>
+<script type="module">
+  fetch("/nav.html")
+    .then((res) => res.text())
+    .then((data) => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+<!--พื้นหลัง-->
+<section class="container">
+    <div class="container-con">
+        <h1>เมนู</h1>
+    </div>
+    <div class="card-menu">
+        <div class="card">
+            <h2>เมนูที่ 1</h2>
+            <p>รายละเอียดเมนูที่ 1</p>
+        </div>
+        <div class="card">
+            <h2>เมนูที่ 2</h2>
+            <p>รายละเอียดเมนูที่ 2</p>
+        </div>
+        <div class="card">
+            <h2>เมนูที่ 3</h2>
+            <p>รายละเอียดเมนูที่ 3</p>
+        </div>
+    </div>
+</section>
+<script type="module" src="/script.js"></script>
+</body>
+</html>
